@@ -1,0 +1,351 @@
+<style>
+.table-tennis-section {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 17px 80px;
+}
+
+.content-wrapper {
+  align-self: end;
+  width: 100%;
+  max-width: 1220px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 42%;
+}
+
+.text-content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+}
+
+.title {
+  color: #ff0a0e;
+  font-size: 128px;
+}
+
+.description {
+  color: #000;
+  font-size: 36px;
+  margin: 42px 41px 0 0;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 58%;
+}
+
+.main-image {
+  aspect-ratio: 1.5;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.reasons-section {
+  align-self: center;
+  width: 100%;
+  max-width: 1167px;
+  margin: 34px 0 0 23px;
+}
+
+.reasons-content {
+  display: flex;
+  gap: 20px;
+}
+
+.reasons-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 76%;
+}
+
+.reasons-wrapper {
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.reasons-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.reason-item {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+}
+
+.reason-text {
+  display: flex;
+  margin-right: -55px;
+  flex-direction: column;
+  white-space: nowrap;
+  font: 400 36px Inter, sans-serif;
+}
+
+.reason-title {
+  color: #000;
+}
+
+.reason-highlight {
+  background-color: #07ff18;
+  border-radius: 50%;
+  align-self: start;
+  margin-top: 13px;
+  color: #fff;
+  padding: 72px 70px;
+}
+
+.reason-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 272px;
+  margin-top: 27px;
+  flex-grow: 1;
+  align-items: center;
+  color: #fff;
+  white-space: nowrap;
+  padding: 116px 80px 71px;
+  font: 400 36px Inter, sans-serif;
+}
+
+.reason-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.reason-image-text {
+  position: relative;
+  display: flex;
+  width: 211px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.reason-image-text-top {
+  align-self: start;
+}
+
+.reason-image-text-bottom {
+  align-self: end;
+  margin-top: 20px;
+}
+
+.conclusion {
+  color: #000;
+  align-self: start;
+  margin-top: 23px;
+  font: 400 36px Inter, sans-serif;
+}
+
+.highlight-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 24%;
+}
+
+.highlight-text {
+  background-color: #f7ff0a;
+  border-radius: 50%;
+  margin-top: 216px;
+  flex-grow: 1;
+  color: #000;
+  white-space: nowrap;
+  width: 100%;
+  padding: 38px 32px;
+  font: 400 36px Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .table-tennis-section {
+    padding: 0 20px;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .text-column {
+    width: 100%;
+  }
+
+  .text-content {
+    max-width: 100%;
+    margin-top: 13px;
+  }
+
+  .title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .description {
+    max-width: 100%;
+    margin: 40px 10px 0 0;
+  }
+
+  .image-column {
+    width: 100%;
+  }
+
+  .main-image {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .reasons-section {
+    max-width: 100%;
+  }
+
+  .reasons-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .reasons-column {
+    width: 100%;
+  }
+
+  .reasons-wrapper {
+    max-width: 100%;
+    margin-right: -3px;
+  }
+
+  .reasons-grid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .reason-item {
+    width: 100%;
+  }
+
+  .reason-text {
+    max-width: 100%;
+    white-space: initial;
+  }
+
+  .reason-title {
+    max-width: 100%;
+  }
+
+  .reason-highlight {
+    white-space: initial;
+    padding: 0 20px;
+  }
+
+  .reason-image-wrapper {
+    max-width: 100%;
+    white-space: initial;
+    padding: 100px 20px 0;
+  }
+
+  .reason-image-text {
+    white-space: initial;
+  }
+
+  .conclusion {
+    max-width: 100%;
+  }
+
+  .highlight-column {
+    width: 100%;
+  }
+
+  .highlight-text {
+    margin-top: 40px;
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+</style>
+
+<section class="table-tennis-section">
+  <div class="content-wrapper">
+    <div class="main-content">
+      <div class="text-column">
+        <div class="text-content">
+          <h1 class="title">俺の <span style="color: #370aff;">卓球</span></h1>
+          <p class="description">
+            僕の趣味は卓球 <br />
+            そんな僕は常日頃卓球のことを考えて生活しているわけだがなぜ僕が卓球を続けているのかをふと考えてみた。 <br />
+            もちろん卓球が好きだからが一番の理由なのだがそれだけではない気がする。 <br />
+            そこで
+          </p>
+        </div>
+      </div>
+      <div class="image-column">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/276986601b82e37d1509b59480203f46e7b303fcdd04d6f765e9bfacb6fb8ed1?placeholderIfAbsent=true&apiKey=831ace4881044a9e8ea94bda934b2a36" class="main-image" alt="Table tennis player in action" />
+      </div>
+    </div>
+  </div>
+  <div class="reasons-section">
+    <div class="reasons-content">
+      <div class="reasons-column">
+        <div class="reasons-wrapper">
+          <div class="reasons-grid">
+            <div class="reason-item">
+              <div class="reason-text">
+                <h2 class="reason-title">僕が卓球を続けている理由を考えてみた</h2>
+                <p class="reason-highlight">音がサイコー！</p>
+              </div>
+            </div>
+            <div class="reason-item">
+              <div class="reason-image-wrapper">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4eea54b87931bdf9aa6abca87f4af4e6e803e3ea8b5c0070af6f909895652f4?placeholderIfAbsent=true&apiKey=831ace4881044a9e8ea94bda934b2a36" class="reason-image" alt="Table tennis rally" />
+                <div class="reason-image-text">
+                  <p class="reason-image-text-top">ラリーが</p>
+                  <p class="reason-image-text-bottom">気持ちい〜</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="conclusion">
+            などなどたくさん理由があるわけだ。 <br />
+            これからも卓球を続けていこうと思う！！
+          </p>
+        </div>
+      </div>
+      <div class="highlight-column">
+        <p class="highlight-text">スマッシュが決まる〜〜〜最高！</p>
+      </div>
+    </div>
+  </div>
+</section>
